@@ -21,5 +21,6 @@
 
   <modules>
     <module>./zyymh</module>
+    <module>./zyymhht</module>
   </modules>
 </project>

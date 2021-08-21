@@ -1,0 +1,29 @@
+#端口设置
+server:
+  port: 8083
+
+#连接数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zyymh?dormitory=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&allowMultiQueries=true
+    username: chenyicai
+    password: cyc1234
+  jpa:
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 30MB  #设置上传文件的大小
+      max-request-size: 30MB
+
+#日志级别（一般设置为INFO）
+logging:
+  level:
+    com:
+      example:
+        vuedemo:
+          mapper: debug
+
+mybatis:
+  type-aliases-package: cn.edu.guet.entity
+  mapper-locations: classpath:mapper/*.xml

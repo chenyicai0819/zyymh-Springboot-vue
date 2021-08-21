@@ -8,7 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="zyymh-Springboot-vue" />
         <module name="zyymh" />
+        <module name="zyymhht" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zymhht" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="zyymhht" options="-parameters" />
+    </option>
   </component>
 </project>
